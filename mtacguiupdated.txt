@@ -825,19 +825,6 @@ local function UPFWO_fake_script() -- grabguns.getguns
 	game.Workspace["MTAC Gearbox"].Box.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 	end)
 end
-coroutine.wrap(UPFWO_fake_script)()
-local function FOPCDGG_fake_script() -- gamelol.LocalScript 
-	local script = Instance.new('LocalScript', gamelol)
-
-	local place = script.Parent.Text
-	
-	
-	if game.PlaceId == {4871082435} then place = '[MTAC] Marine Corps Air Station Kaneohe Bay'
-	if game.PlaceId == {4628548990} then place = 'Fort Brag, North Carolina'
-	loadstring(game:HttpGet(''))()
-	end
-	end
-end
 coroutine.wrap(FOPCDGG_fake_script)()
 local function PTHD_fake_script() -- loader.handler 
 	local script = Instance.new('LocalScript', loader)
