@@ -35,6 +35,7 @@ local loader = Instance.new("TextLabel")
 epicgui.Name = "epicgui"
 epicgui.Parent = game.Players.LocalPlayer.PlayerGui
 epicgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+epicgui.ResetOnSpawn = false
 
 main.Name = "main"
 main.Parent = epicgui
