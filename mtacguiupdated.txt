@@ -1,0 +1,873 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local epicgui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local titlelol = Instance.new("TextLabel")
+local versionlol = Instance.new("TextLabel")
+local teleportopen = Instance.new("ImageLabel")
+local teleports = Instance.new("TextButton")
+local teleportframe = Instance.new("ImageLabel")
+local airfield = Instance.new("TextButton")
+local spawn = Instance.new("TextButton")
+local armory = Instance.new("TextButton")
+local barracks = Instance.new("TextButton")
+local carrier = Instance.new("TextButton")
+local gate = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local secret = Instance.new("TextButton")
+local miscopen = Instance.new("ImageLabel")
+local misc = Instance.new("TextButton")
+local miscframe = Instance.new("ImageLabel")
+local rankdoor = Instance.new("TextButton")
+local fepose = Instance.new("TextButton")
+local walkspeed = Instance.new("TextButton")
+local infyield = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local gunopen = Instance.new("ImageLabel")
+local guns = Instance.new("TextButton")
+local gunframe = Instance.new("ImageLabel")
+local grabguns = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local gamelol = Instance.new("TextLabel")
+local login = Instance.new("ImageLabel")
+local versionlol_2 = Instance.new("TextLabel")
+local titlelol_2 = Instance.new("TextLabel")
+local loader = Instance.new("TextLabel")
+
+--Properties:
+
+epicgui.Name = "epicgui"
+epicgui.Parent = game.Players.LocalPlayer.PlayerGui
+epicgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = epicgui
+main.Active = true
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.0280000009, 0, 1.18799996, 0)
+main.Size = UDim2.new(0, 40, 0, 27)
+
+titlelol.Name = "titlelol"
+titlelol.Parent = main
+titlelol.Active = true
+titlelol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+titlelol.BackgroundTransparency = 1.000
+titlelol.BorderSizePixel = 0
+titlelol.Position = UDim2.new(-1.06425023, 0, -4.89349174, 0)
+titlelol.Size = UDim2.new(0, 138, 0, 28)
+titlelol.Font = Enum.Font.Gotham
+titlelol.Text = "military fricker"
+titlelol.TextColor3 = Color3.fromRGB(255, 255, 255)
+titlelol.TextScaled = true
+titlelol.TextSize = 25.000
+titlelol.TextWrapped = true
+
+versionlol.Name = "versionlol"
+versionlol.Parent = main
+versionlol.Active = true
+versionlol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+versionlol.BackgroundTransparency = 1.000
+versionlol.BorderSizePixel = 0
+versionlol.Position = UDim2.new(2.36426592, 0, -4.89496708, 0)
+versionlol.Size = UDim2.new(0, 22, 0, 16)
+versionlol.Font = Enum.Font.Gotham
+versionlol.Text = "v1"
+versionlol.TextColor3 = Color3.fromRGB(75, 255, 10)
+versionlol.TextScaled = true
+versionlol.TextSize = 14.000
+versionlol.TextWrapped = true
+
+teleportopen.Name = "teleportopen"
+teleportopen.Parent = main
+teleportopen.Active = true
+teleportopen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+teleportopen.BackgroundTransparency = 1.000
+teleportopen.Position = UDim2.new(2.03518105, 0, -3.61607075, 0)
+teleportopen.Size = UDim2.new(0, 114, 0, 26)
+teleportopen.Image = "rbxassetid://3570695787"
+teleportopen.ImageColor3 = Color3.fromRGB(84, 84, 84)
+teleportopen.ScaleType = Enum.ScaleType.Slice
+teleportopen.SliceCenter = Rect.new(100, 100, 100, 100)
+teleportopen.SliceScale = 0.120
+
+teleports.Name = "teleports"
+teleports.Parent = teleportopen
+teleports.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
+teleports.BackgroundTransparency = 1.000
+teleports.BorderSizePixel = 0
+teleports.Position = UDim2.new(0.094252944, 0, 0.0526194572, 0)
+teleports.Size = UDim2.new(0, 91, 0, 24)
+teleports.Font = Enum.Font.GothamSemibold
+teleports.Text = "teleports"
+teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleports.TextScaled = true
+teleports.TextSize = 25.000
+teleports.TextWrapped = true
+
+teleportframe.Name = "teleportframe"
+teleportframe.Parent = teleports
+teleportframe.Active = true
+teleportframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+teleportframe.BackgroundTransparency = 1.000
+teleportframe.Position = UDim2.new(-0.0327396616, 0, 0.999999821, 0)
+teleportframe.Size = UDim2.new(0, 95, 0, 306)
+teleportframe.Visible = false
+teleportframe.Image = "rbxassetid://3570695787"
+teleportframe.ImageColor3 = Color3.fromRGB(89, 89, 89)
+teleportframe.ScaleType = Enum.ScaleType.Slice
+teleportframe.SliceCenter = Rect.new(100, 100, 100, 100)
+teleportframe.SliceScale = 0.120
+
+airfield.Name = "airfield"
+airfield.Parent = teleportframe
+airfield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+airfield.BackgroundTransparency = 1.000
+airfield.BorderSizePixel = 0
+airfield.Position = UDim2.new(0.114178464, 0, 0.0332249254, 0)
+airfield.Size = UDim2.new(0, 73, 0, 22)
+airfield.Font = Enum.Font.Gotham
+airfield.Text = "airfield"
+airfield.TextColor3 = Color3.fromRGB(255, 255, 255)
+airfield.TextScaled = true
+airfield.TextSize = 25.000
+airfield.TextWrapped = true
+
+spawn.Name = "spawn"
+spawn.Parent = teleportframe
+spawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+spawn.BackgroundTransparency = 1.000
+spawn.BorderSizePixel = 0
+spawn.Position = UDim2.new(0.113182828, 0, 0.73735249, 0)
+spawn.Size = UDim2.new(0, 73, 0, 22)
+spawn.Font = Enum.Font.Gotham
+spawn.Text = "spawn"
+spawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+spawn.TextScaled = true
+spawn.TextSize = 25.000
+spawn.TextWrapped = true
+
+armory.Name = "armory"
+armory.Parent = teleportframe
+armory.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+armory.BackgroundTransparency = 1.000
+armory.BorderSizePixel = 0
+armory.Position = UDim2.new(0.108847618, 0, 0.186222047, 0)
+armory.Size = UDim2.new(0, 73, 0, 22)
+armory.Font = Enum.Font.Gotham
+armory.Text = "armory"
+armory.TextColor3 = Color3.fromRGB(255, 255, 255)
+armory.TextScaled = true
+armory.TextSize = 25.000
+armory.TextWrapped = true
+
+barracks.Name = "barracks"
+barracks.Parent = teleportframe
+barracks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+barracks.BackgroundTransparency = 1.000
+barracks.BorderSizePixel = 0
+barracks.Position = UDim2.new(0.114178464, 0, 0.323569655, 0)
+barracks.Size = UDim2.new(0, 73, 0, 22)
+barracks.Font = Enum.Font.Gotham
+barracks.Text = "barracks"
+barracks.TextColor3 = Color3.fromRGB(255, 255, 255)
+barracks.TextScaled = true
+barracks.TextSize = 25.000
+barracks.TextWrapped = true
+
+carrier.Name = "carrier"
+carrier.Parent = teleportframe
+carrier.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+carrier.BackgroundTransparency = 1.000
+carrier.BorderSizePixel = 0
+carrier.Position = UDim2.new(0.00227860734, 0, 0.463024408, 0)
+carrier.Size = UDim2.new(0, 90, 0, 22)
+carrier.Font = Enum.Font.Gotham
+carrier.Text = "carrier"
+carrier.TextColor3 = Color3.fromRGB(255, 255, 255)
+carrier.TextScaled = true
+carrier.TextSize = 25.000
+carrier.TextWrapped = true
+
+gate.Name = "gate"
+gate.Parent = teleportframe
+gate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gate.BackgroundTransparency = 1.000
+gate.BorderSizePixel = 0
+gate.Position = UDim2.new(0.0206404291, 0, 0.602479219, 0)
+gate.Size = UDim2.new(0, 88, 0, 22)
+gate.Font = Enum.Font.Gotham
+gate.Text = "gate"
+gate.TextColor3 = Color3.fromRGB(255, 255, 255)
+gate.TextScaled = true
+gate.TextSize = 25.000
+gate.TextWrapped = true
+
+Frame.Parent = teleportframe
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.00213767681, 0)
+Frame.Size = UDim2.new(0, 95, 0, 9)
+
+secret.Name = "secret"
+secret.Parent = teleportframe
+secret.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+secret.BackgroundTransparency = 1.000
+secret.BorderSizePixel = 0
+secret.Position = UDim2.new(0.113182828, 0, 0.841927648, 0)
+secret.Size = UDim2.new(0, 73, 0, 22)
+secret.Font = Enum.Font.Gotham
+secret.Text = "secret cars"
+secret.TextColor3 = Color3.fromRGB(255, 255, 255)
+secret.TextScaled = true
+secret.TextSize = 25.000
+secret.TextWrapped = true
+
+miscopen.Name = "miscopen"
+miscopen.Parent = main
+miscopen.Active = true
+miscopen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+miscopen.BackgroundTransparency = 1.000
+miscopen.Position = UDim2.new(5.12500048, 0, -3.61607075, 0)
+miscopen.Size = UDim2.new(0, 114, 0, 26)
+miscopen.Image = "rbxassetid://3570695787"
+miscopen.ImageColor3 = Color3.fromRGB(84, 84, 84)
+miscopen.ScaleType = Enum.ScaleType.Slice
+miscopen.SliceCenter = Rect.new(100, 100, 100, 100)
+miscopen.SliceScale = 0.120
+
+misc.Name = "misc"
+misc.Parent = miscopen
+misc.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
+misc.BackgroundTransparency = 1.000
+misc.BorderSizePixel = 0
+misc.Position = UDim2.new(0, 0, -0.027152393, 0)
+misc.Size = UDim2.new(0, 113, 0, 24)
+misc.Font = Enum.Font.GothamSemibold
+misc.Text = "misc"
+misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+misc.TextScaled = true
+misc.TextSize = 25.000
+misc.TextWrapped = true
+
+miscframe.Name = "miscframe"
+miscframe.Parent = misc
+miscframe.Active = true
+miscframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+miscframe.BackgroundTransparency = 1.000
+miscframe.Position = UDim2.new(0.0768809319, 0, 1.08333397, 0)
+miscframe.Size = UDim2.new(0, 95, 0, 257)
+miscframe.Visible = false
+miscframe.Image = "rbxassetid://3570695787"
+miscframe.ImageColor3 = Color3.fromRGB(89, 89, 89)
+miscframe.ScaleType = Enum.ScaleType.Slice
+miscframe.SliceCenter = Rect.new(100, 100, 100, 100)
+miscframe.SliceScale = 0.120
+
+rankdoor.Name = "rankdoor"
+rankdoor.Parent = miscframe
+rankdoor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rankdoor.BackgroundTransparency = 1.000
+rankdoor.BorderSizePixel = 0
+rankdoor.Position = UDim2.new(0.0937175527, 0, 0.0558547676, 0)
+rankdoor.Size = UDim2.new(0, 77, 0, 28)
+rankdoor.Font = Enum.Font.Gotham
+rankdoor.Text = "remove rank doors"
+rankdoor.TextColor3 = Color3.fromRGB(255, 255, 255)
+rankdoor.TextScaled = true
+rankdoor.TextSize = 25.000
+rankdoor.TextWrapped = true
+
+fepose.Name = "fepose"
+fepose.Parent = miscframe
+fepose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fepose.BackgroundTransparency = 1.000
+fepose.BorderSizePixel = 0
+fepose.Position = UDim2.new(0.0621385574, 0, 0.24822253, 0)
+fepose.Size = UDim2.new(0, 83, 0, 18)
+fepose.Font = Enum.Font.Gotham
+fepose.Text = "fe pose (r6)"
+fepose.TextColor3 = Color3.fromRGB(255, 255, 255)
+fepose.TextScaled = true
+fepose.TextSize = 25.000
+fepose.TextWrapped = true
+
+walkspeed.Name = "walkspeed"
+walkspeed.Parent = miscframe
+walkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.BackgroundTransparency = 1.000
+walkspeed.BorderSizePixel = 0
+walkspeed.Position = UDim2.new(0.0914155617, 0, 0.58661294, 0)
+walkspeed.Size = UDim2.new(0, 78, 0, 33)
+walkspeed.Font = Enum.Font.Gotham
+walkspeed.Text = "invis fling "
+walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.TextScaled = true
+walkspeed.TextSize = 25.000
+walkspeed.TextWrapped = true
+
+infyield.Name = "infyield"
+infyield.Parent = miscframe
+infyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infyield.BackgroundTransparency = 1.000
+infyield.BorderSizePixel = 0
+infyield.Position = UDim2.new(0.0177314393, 0, 0.403864563, 0)
+infyield.Size = UDim2.new(0, 92, 0, 18)
+infyield.Font = Enum.Font.Gotham
+infyield.Text = "InfYield"
+infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyield.TextScaled = true
+infyield.TextSize = 25.000
+infyield.TextWrapped = true
+
+Frame_2.Parent = miscframe
+Frame_2.Active = true
+Frame_2.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.00213767681, 0)
+Frame_2.Size = UDim2.new(0, 95, 0, 9)
+
+gunopen.Name = "gunopen"
+gunopen.Parent = main
+gunopen.Active = true
+gunopen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gunopen.BackgroundTransparency = 1.000
+gunopen.Position = UDim2.new(-1.06481898, 0, -3.61607099, 0)
+gunopen.Size = UDim2.new(0, 114, 0, 26)
+gunopen.Image = "rbxassetid://3570695787"
+gunopen.ImageColor3 = Color3.fromRGB(84, 84, 84)
+gunopen.ScaleType = Enum.ScaleType.Slice
+gunopen.SliceCenter = Rect.new(100, 100, 100, 100)
+gunopen.SliceScale = 0.120
+
+guns.Name = "guns"
+guns.Parent = gunopen
+guns.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
+guns.BackgroundTransparency = 1.000
+guns.BorderSizePixel = 0
+guns.Position = UDim2.new(0.000199568894, 0, -0.0384616852, 0)
+guns.Size = UDim2.new(0, 113, 0, 26)
+guns.Font = Enum.Font.GothamSemibold
+guns.Text = "guns"
+guns.TextColor3 = Color3.fromRGB(255, 255, 255)
+guns.TextScaled = true
+guns.TextSize = 25.000
+guns.TextWrapped = true
+
+gunframe.Name = "gunframe"
+gunframe.Parent = guns
+gunframe.Active = true
+gunframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gunframe.BackgroundTransparency = 1.000
+gunframe.Position = UDim2.new(0.0796460211, 0, 1.02243674, 0)
+gunframe.Size = UDim2.new(0, 95, 0, 122)
+gunframe.Visible = false
+gunframe.Image = "rbxassetid://3570695787"
+gunframe.ImageColor3 = Color3.fromRGB(89, 89, 89)
+gunframe.ScaleType = Enum.ScaleType.Slice
+gunframe.SliceCenter = Rect.new(100, 100, 100, 100)
+gunframe.SliceScale = 0.120
+
+grabguns.Name = "grabguns"
+grabguns.Parent = gunframe
+grabguns.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+grabguns.BackgroundTransparency = 1.000
+grabguns.BorderSizePixel = 0
+grabguns.Position = UDim2.new(0.0757332295, 0, 0.115290061, 0)
+grabguns.Size = UDim2.new(0, 79, 0, 24)
+grabguns.Font = Enum.Font.Gotham
+grabguns.Text = "grab guns"
+grabguns.TextColor3 = Color3.fromRGB(255, 255, 255)
+grabguns.TextScaled = true
+grabguns.TextSize = 25.000
+grabguns.TextWrapped = true
+
+Frame_3.Parent = gunframe
+Frame_3.Active = true
+Frame_3.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 0, -0.00175337354, 0)
+Frame_3.Size = UDim2.new(0, 95, 0, 9)
+
+gamelol.Name = "gamelol"
+gamelol.Parent = main
+gamelol.Active = true
+gamelol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gamelol.BackgroundTransparency = 1.000
+gamelol.BorderSizePixel = 0
+gamelol.Position = UDim2.new(2.90049314, 0, -4.5971961, 0)
+gamelol.Size = UDim2.new(0, 391, 0, 25)
+gamelol.Font = Enum.Font.Gotham
+gamelol.Text = "game: "
+gamelol.TextColor3 = Color3.fromRGB(255, 255, 255)
+gamelol.TextScaled = true
+gamelol.TextSize = 25.000
+gamelol.TextWrapped = true
+gamelol.TextXAlignment = Enum.TextXAlignment.Left
+
+login.Name = "login"
+login.Parent = epicgui
+login.Active = true
+login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+login.BackgroundTransparency = 1.000
+login.Position = UDim2.new(0.43220523, 0, 0.473162085, 0)
+login.Size = UDim2.new(0, 236, 0, 128)
+login.Image = "rbxassetid://3570695787"
+login.ImageColor3 = Color3.fromRGB(84, 84, 84)
+login.ScaleType = Enum.ScaleType.Slice
+login.SliceCenter = Rect.new(100, 100, 100, 100)
+login.SliceScale = 0.120
+
+versionlol_2.Name = "versionlol"
+versionlol_2.Parent = login
+versionlol_2.Active = true
+versionlol_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+versionlol_2.BackgroundTransparency = 1.000
+versionlol_2.BorderSizePixel = 0
+versionlol_2.Position = UDim2.new(0.715710163, 0, -0.0078125, 0)
+versionlol_2.Size = UDim2.new(0, 21, 0, 15)
+versionlol_2.Font = Enum.Font.Gotham
+versionlol_2.Text = "v1"
+versionlol_2.TextColor3 = Color3.fromRGB(75, 255, 10)
+versionlol_2.TextScaled = true
+versionlol_2.TextSize = 14.000
+versionlol_2.TextWrapped = true
+
+titlelol_2.Name = "titlelol"
+titlelol_2.Parent = login
+titlelol_2.Active = true
+titlelol_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+titlelol_2.BackgroundTransparency = 1.000
+titlelol_2.BorderSizePixel = 0
+titlelol_2.Position = UDim2.new(0.228422001, 0, -0.000624895096, 0)
+titlelol_2.Size = UDim2.new(0, 115, 0, 17)
+titlelol_2.Font = Enum.Font.Gotham
+titlelol_2.Text = "military fricker"
+titlelol_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+titlelol_2.TextScaled = true
+titlelol_2.TextSize = 25.000
+titlelol_2.TextWrapped = true
+
+loader.Name = "loader"
+loader.Parent = login
+loader.Active = true
+loader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loader.BackgroundTransparency = 1.000
+loader.BorderSizePixel = 0
+loader.Position = UDim2.new(0, 0, 0.413437605, 0)
+loader.Size = UDim2.new(0, 235, 0, 17)
+loader.Font = Enum.Font.Gotham
+loader.Text = ""
+loader.TextColor3 = Color3.fromRGB(255, 255, 255)
+loader.TextSize = 25.000
+loader.TextWrapped = true
+
+-- Scripts:
+
+local function DECWDFE_fake_script() -- teleports.LocalScript 
+	local script = Instance.new('LocalScript', teleports)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(204,255,204);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		
+	script.Parent.teleportframe.Visible = true
+	script.Parent.Parent.Parent.gunopen.guns.gunframe.Visible = false
+	script.Parent.Parent.Parent.miscopen.misc.miscframe.Visible = false
+	
+	end)
+end
+coroutine.wrap(DECWDFE_fake_script)()
+local function CCGOPP_fake_script() -- airfield.LocalScript 
+	local script = Instance.new('LocalScript', airfield)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3780.8501, 4.85412407, -3834.50024)
+	end)
+end
+coroutine.wrap(CCGOPP_fake_script)()
+local function ZRLVI_fake_script() -- spawn.LocalScript 
+	local script = Instance.new('LocalScript', spawn)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1987.50684, 2.06137085, -3688.75952)
+	end)
+end
+coroutine.wrap(ZRLVI_fake_script)()
+local function QAWNRK_fake_script() -- armory.LocalScript 
+	local script = Instance.new('LocalScript', armory)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3495.81152, 6.55842161, -3624.04492)
+	end)
+end
+coroutine.wrap(QAWNRK_fake_script)()
+local function IZDGNB_fake_script() -- barracks.LocalScript 
+	local script = Instance.new('LocalScript', barracks)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3074.58081, 9.42356491, -3298.32861)
+	end)
+end
+coroutine.wrap(IZDGNB_fake_script)()
+local function UKMSW_fake_script() -- carrier.LocalScript 
+	local script = Instance.new('LocalScript', carrier)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8334.16699, 52.7825089, 10018.5693)
+	end)
+end
+coroutine.wrap(UKMSW_fake_script)()
+local function EPKATXT_fake_script() -- gate.LocalScript 
+	local script = Instance.new('LocalScript', gate)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2349.87988, 33.7648468, -3733.58496)
+	end)
+end
+coroutine.wrap(EPKATXT_fake_script)()
+local function GSAABAU_fake_script() -- secret.LocalScript 
+	local script = Instance.new('LocalScript', secret)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2799.27686, 3.56249952, -2460.29468)
+	end)
+end
+coroutine.wrap(GSAABAU_fake_script)()
+local function KNPB_fake_script() -- misc.LocalScript 
+	local script = Instance.new('LocalScript', misc)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(204,255,204);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		
+	script.Parent.miscframe.Visible = true
+	script.Parent.Parent.Parent.teleportopen.teleports.teleportframe.Visible = false
+	script.Parent.Parent.Parent.gunopen.guns.gunframe.Visible = false
+	end)
+end
+coroutine.wrap(KNPB_fake_script)()
+local function MAZCBQ_fake_script() -- rankdoor.LocalScript 
+	local script = Instance.new('LocalScript', rankdoor)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.RankDoor:Destroy()
+		game.Workspace.RankDoor:Destroy()
+		spawn(function()
+		local message = Instance.new("Message",workspace)
+		message.Text = "Rank doors removed. You may now access secret vehicles."
+		wait(1.5)
+		message:Destroy()
+		end)
+	end)
+end
+coroutine.wrap(MAZCBQ_fake_script)()
+local function NQAEYM_fake_script() -- fepose.LocalScript 
+	local script = Instance.new('LocalScript', fepose)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/qmU8HcuX'))()
+	end)
+end
+coroutine.wrap(NQAEYM_fake_script)()
+local function SRJD_fake_script() -- walkspeed.LocalScript 
+	local script = Instance.new('LocalScript', walkspeed)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/MfaJrGKL'))()
+	end)
+end
+coroutine.wrap(SRJD_fake_script)()
+local function WIDRRBS_fake_script() -- infyield.LocalScript 
+	local script = Instance.new('LocalScript', infyield)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(WIDRRBS_fake_script)()
+local function SUCQ_fake_script() -- guns.LocalScript 
+	local script = Instance.new('LocalScript', guns)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(204,255,204);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		
+	script.Parent.Parent.guns.gunframe.Visible = true
+	script.Parent.Parent.Parent.teleportopen.teleports.teleportframe.Visible = false
+	script.Parent.Parent.Parent.miscopen.misc.miscframe.Visible = false
+	end)
+	
+end
+coroutine.wrap(SUCQ_fake_script)()
+local function UPFWO_fake_script() -- grabguns.getguns 
+	local script = Instance.new('LocalScript', grabguns)
+
+	local holder = script.Parent
+	
+	holder.MouseEnter:Connect(function()
+				game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(0,255,0);
+		}):Play();
+	end)
+	
+	holder.MouseLeave:Connect(function()
+			game:GetService("TweenService"):Create(holder, TweenInfo.new(0.2), {
+			['TextColor3'] = Color3.fromRGB(255,255,255);
+		}):Play();
+	end)
+	
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+	game.Workspace["MTAC Gearbox"].Box.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+	end)
+end
+coroutine.wrap(UPFWO_fake_script)()
+local function FOPCDGG_fake_script() -- gamelol.LocalScript 
+	local script = Instance.new('LocalScript', gamelol)
+
+	local place = script.Parent.Text
+	
+	
+	if game.PlaceId == {4871082435} then place = '[MTAC] Marine Corps Air Station Kaneohe Bay'
+	if game.PlaceId == {4628548990} then place = 'Fort Brag, North Carolina'
+	loadstring(game:HttpGet(''))()
+	end
+	end
+end
+coroutine.wrap(FOPCDGG_fake_script)()
+local function PTHD_fake_script() -- loader.handler 
+	local script = Instance.new('LocalScript', loader)
+
+	wait(1)
+	local status = script.Parent
+	wait(1)
+	if game:IsLoaded() then
+	wait(1) 
+	status.Text = 'loading'
+	wait(1)
+		status.Text = 'loading.'
+	wait(1)
+		status.Text = 'loading..'
+	wait(1)
+		status.Text = 'loading...'
+	wait(1)
+		status.Text = 'loaded! enjoy!'
+	wait(1)
+	local object = script.Parent.Parent
+	object.loader.Visible = false
+	object.titlelol.Visible = false
+	object.versionlol.Visible = false
+	object.AnchorPoint = Vector2.new(0.5, 0.5)
+	object.Position = UDim2.new(0.494, 0,0.55, 0)
+	object:TweenSize(UDim2.new(0, 00,0, 0))
+	wait(1)
+		game.Players.LocalPlayer.PlayerGui.epicgui.main:TweenPosition(UDim2.new(0.027, 0,0.212, 0), "Out", "Quad", 1, true)
+	wait(11)
+	object.Visible = false
+	end
+end
+coroutine.wrap(PTHD_fake_script)()
