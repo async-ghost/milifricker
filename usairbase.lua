@@ -1,6 +1,6 @@
-// credits to deto for ui lib //
-// credits to people who made inf yield, Frost Explorer, and Invis Fling // 
-// teleports and grab gun acs bypass and script by ghost and droid, enjoy // 
+--@ credits to deto for ui lib @--
+--! credits to people who made inf yield, Frost Explorer, and Invis Fling !--
+-- * teleports and grab gun acs bypass and script by ghost and droid, enjoy * -- 
 
 local Finity = loadstring(game:HttpGet("http://finity.vip/scripts/finity_lib.lua"))()
 local FinityWindow = Finity.new(true)
